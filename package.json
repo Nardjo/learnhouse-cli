@@ -1,0 +1,32 @@
+{
+  "name": "learnhouse-cli",
+  "version": "0.1.0",
+  "description": "CLI for the admin API of a self-hosted LearnHouse LMS",
+  "type": "module",
+  "bin": {
+    "learnhouse-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/index.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardjo/learnhouse-cli.git"
+  },
+  "keywords": [
+    "learnhouse",
+    "lms",
+    "cli",
+    "api2cli"
+  ]
+}
